@@ -6,6 +6,8 @@ For example, if there are 4 stones in the heap, then you will never win the game
 
 
 var canWinNim = function(n) {
-    // can win if there are 3-1 stones left after 2 turns
-    
+
+  return !n % 4 === 0;
+
 };
+
