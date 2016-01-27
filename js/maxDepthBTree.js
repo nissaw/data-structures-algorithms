@@ -8,7 +8,8 @@ function TreeNode(val) {
 var maxDepth = function(root) {
         var max = 0;
     var checkDepth = function(node, counter){
-
+      // need to deal with incrementing if there is no children
+      if (node){
         if (node && node.right){
           counter++;
           max = counter > max ? counter : max;
@@ -18,6 +19,10 @@ var maxDepth = function(root) {
           counter++;
           max = counter > max ? counter : max;
           checkDepth(node.left, counter);
+        }
+        else {
+          counter++;
+          max = counter > max ? counter : max;
         }
     };
    checkDepth(root, 0);
