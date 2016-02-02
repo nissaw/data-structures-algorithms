@@ -68,7 +68,7 @@ var robotPaths = function(n){
 
   // RECURSIVE CASE: 
     else {
-    // check down [x + 1, 0]
+    // check down [x + 1, 0] 
       if (x + 1 < n && !board.hasBeenVisited(x+1, y)){
         sub(x+1, y);
       }

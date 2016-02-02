@@ -18,3 +18,5 @@ var isPowerOfThree = function(n) {
 };
 
 // Could you do it without using any loop / recursion?
+
+//has to be divisible by 3
