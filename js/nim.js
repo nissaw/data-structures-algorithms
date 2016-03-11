@@ -6,9 +6,9 @@ For example, if there are 4 stones in the heap, then you will never win the game
 */
 
 // this version wouldn't pass leetcode
-var canWinNim = function(n) {
+var canWinNim1 = function(n) {
 
-  return !n % 4 === 0;
+  return !(n % 4 === 0);
 
 };
 
@@ -20,3 +20,9 @@ var canWinNim = function(n) {
       return true;
   }
 };
+
+console.log(canWinNim1(4));
+console.log(canWinNim(4));
+
+console.log(canWinNim1(5));
+console.log(canWinNim(5));

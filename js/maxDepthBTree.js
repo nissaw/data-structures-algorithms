@@ -24,6 +24,7 @@ var maxDepth = function(root) {
           counter++;
           max = counter > max ? counter : max;
         }
+      }
     };
    checkDepth(root, 0);
    return max; 
